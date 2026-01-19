@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Blog Platform</h1>
+            <p>Create and manage your blog posts</p>
+        </header>
+
+        <!-- Form to create new blog post -->
+        <section class="form-section">
+            <h2>Create New Blog Post</h2>
+            <form id="blogForm">
+                <div class="form-group">
+                    <label for="title">Title *</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Anonymous">
+                </div>
+                
+                <div class="form-group">
+                    <label for="body">Content *</label>
+                    <textarea id="body" name="body" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Create Post</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+
+        <!-- Display all blog posts -->
+        <section class="posts-section">
+            <h2>All Blog Posts</h2>
+            <div id="postsContainer">
+                <p>Loading posts...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
